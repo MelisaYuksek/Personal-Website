@@ -34,6 +34,7 @@
         <li> <a href= "#sehir"> Şehrim</a></li>
         <li> <a href= "#mirasimiz"> Mirasımız</a></li>
         <li> <a href= "#ilgialanlarim"> İlgi Alanlarım</a></li>
+        <li> <a href= "#iletisim"> İletişim</a></li>
     </ul>
 
     <a href="#" class="btn" type="button" > Giriş </a>
@@ -49,24 +50,73 @@
 
 </header>
 
+
 <!--background-->
 <section>
+    <img src ="/images/clouds.png" id="clouds" width="100%">
+    <img src ="/images/clouds2.png" id="clouds2">
+    <img src="/images/deniz.png" id="sea">
     <img src ="/images/stars.png" id="stars">
     <img src ="/images/moon.png" id="moon">
     <h2 id="text"> Melisa Yüksek  </h2>
-    <a href="#" class="button"> Başlayalım</a>
-    <img src ="/images/clouds.png" id="clouds">
-    <img src ="/images/clouds2.png" id="clouds2">
+    <a href="#sec" class="button" padding="100%"> Başlayalım </a>
+    
+    
 </section>
 
-<!--home-->
-<div class="home" id="home">
-    <div class="home-text">
-    <h1>Merhaba, ben Melisa! </h1></div>
-<div class="picrew-img">
-    <img src="images/picrew.png">
+
 </div>
+<!--2.sayfa-->
+<div class="sec" id="sec">
+    <h2>Hakkımda </h2>
+    <p> Merhaba, Ben Melisa!</p>
+   
+    <img src="/images/picrew.png" id="picrew" >
+    <img src="/images/hobies.png" id="hobies" >
+    <img src="/images/events.png" id="events" >
+    <img src="/images/who.png" id="who" >
+    
 </div>
+
+<!--container-->
+
+<section class="container" id="container">
+    
+        <h3> Hobilerim</h3>
+        <p>Trekking: Doğayla iç içe olmayı seviyorum ve hafta sonları 
+            genellikle arkadaşlarımla trekking rotalarında bulunuyorum. 
+            En sevdiğim rotalardan biri Kaçkar Dağları. <br>
+            Fotoğrafçılık: Fotoğraf çekmek benim için bir tutku. Doğanın güzelliklerini 
+            ve insanın mimari eserlerini yakalamak beni mutlu ediyor. Instagram hesabımda 
+            en sevdiğim kareleri paylaşıyorum. </p>
+    </div>
+</section>
+
+
+<!---->
+<script>
+    let clouds = document.getElementById('clouds');    
+    let clouds2 = document.getElementById('clouds2');
+    let stars = document.getElementById('stars');
+    let moon = document.getElementById('moon'); 
+    let text = document.getElementById('text');
+    let button = document.getElementById('button');  
+    let header=document.querySelector('header');
+   
+    window.addEventListener('scroll', function(){
+        let value=window.scrollY;
+        clouds.style.left= value *0.8 + 'px';
+        clouds2.style.marginRight= value *0.5 + 'px';
+        stars.style.left= value *0.25 + 'px';   
+        moon.style.top= value *1.05 + 'px';
+        text.style.marginRight= value *4 + 'px';
+        button.style.marginLeft= value *1.5 + 'px';
+        header.style.top= value *1.05 + 'px';
+    })
+
+</script>
+
+
 
 
 
