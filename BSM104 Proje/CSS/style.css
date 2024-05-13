@@ -13,7 +13,7 @@
 :root{
     --main-color: #014674;
     --text-color: #000;
-    --other-color: #212121;
+    --other-color: #142a48;
     --second-color: #9e9e9e;
     --bg-color: #000;
     --big-font: 4.5rem;
@@ -131,29 +131,7 @@ section img#clouds2{
 
 }
 
-.sec h2{
-    font-size: 3.5em;
-    margin-bottom: 10px;
-    transform: top;
-    color: #77e7e9;
-}
 
-.sec p{
-    font-size: 1.2em;
-    color: #fff;
-}
-
-.sec img{
-    position: relative;
-    width: 450px;
-    transform: translateX(60vw);
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 2rem;
-   
-}
 /*--------------------------------------------*/
 
 
@@ -306,9 +284,10 @@ div.home{
 }
 
 .sec img#hobies {
+    opacity: 0.7;
     width: 90px;
     height: auto;
-    transform: translateX(70px) translateY(-50%);
+    transform: translateX(70px) translateY(380%);
     top: -250px; /*yüksekliği ayarla. !değer küçüldükçe yukarı çıkıyor!*/
 }
 .sec img#events {
@@ -323,3 +302,167 @@ div.home{
     transform: translateX(50px) translateY(-30%);
     top: -250px; /*yüksekliği ayarla. !değer küçüldükçe yukarı çıkıyor!*/
 }
+
+header.sticky{
+    padding: 12px 14%;
+    background: var(--other-color);
+}
+
+/*--------container-------*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(800px, auto));
+    text-align: center;
+    left: -320px;
+    top: -850px;
+    text-align: left;
+    margin-top: -20px;
+    color:#fff;
+}
+
+.container h1{
+    padding: 30px 0 50px;
+    display: grid;
+    font-size: 50px;
+    grid-template-columns: repeat(auto-fit, minimax(300px, auto));
+    text-align: left;
+    margin-left: 10px;
+    margin-top: -95px;
+    color:#a7e3f9;
+}
+.container h2{
+    padding: 30px 0 50px;
+    display: grid;
+    font-size: 30px;
+    grid-template-columns: repeat(auto-fit, minimax(300px, auto));
+    text-align: left;
+    margin-left: 10px;
+    margin-top: -30px;
+    color:#ffffff;
+}
+
+
+.container h1#kimim:hover{
+    color: #42709e;
+    text-shadow: #032648 1px 1px 10px;
+}
+
+
+.sec img{ /*picrew*/
+    position: relative;
+    width: 180px;
+    left: 280px;
+    top: -35px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    z-index: 12;
+   
+}
+
+.container#etkinlik {
+    padding: 30px 14% 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(300px, auto));
+    text-align: center;
+    left: 25%; /* İstenilen yere göre ayarlayabilirsiniz */
+    margin-top: -1300px; /* İstenilen yere göre ayarlayabilirsiniz */
+}
+
+
+.container-box{
+    padding: 20px 20px;
+    background-image: linear-gradient(to top, transparent, var(--other-color) );
+    border-radius: 3rem ;
+    transform: translateX(-100px);
+}
+
+
+
+/* ------------container 2---------- */
+
+.container2#etkinlik {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(300px, auto));
+    text-align: center;
+    left: -21%;
+    top: -1200px;
+    text-align: left;
+    margin-top: -80px;
+    color:#fff;
+}
+
+.container2 p{
+    margin-top: -60px;
+}
+
+
+.container2-box{
+    padding: 32px 32px;
+    background-image: linear-gradient(to bottom, transparent, #081931 );
+    border-radius: 3rem ;
+    transform: translateX(-100px);
+}
+
+.container2 h2{
+    display: grid;
+    font-size: 20px;
+    grid-template-columns: repeat(auto-fit, minimax(300px, auto));
+    text-align: left;
+    left: -20%;
+    margin-top: -10 px;
+    color:#ffffff;
+}
+
+.container2 h1{
+    font-size: 40px ;
+    margin-top: -10px;
+    color:#84beb9;
+}
+.container2 h1:hover{
+    color: #42709e;
+    text-shadow: #032648 1px 1px 10px;
+}
+
+
+
+
+
+/*------------------slider------------------
+.card-image{
+
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+
+.image-content, 
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+
+.image-content .card-img{
+
+height: 100%;
+width: 100%;
+object-fit: cover;
+left: -20%;
+
+}
+
+.card{
+
+    border-radius: 25px;
+    background-color: #54e61d;
+}
+
+.button2{
+    margin-top: -500px;
+    z-index: 10;
+} */
