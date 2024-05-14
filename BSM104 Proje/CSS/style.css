@@ -426,7 +426,100 @@ header.sticky{
     text-shadow: #032648 1px 1px 10px;
 }
 
+/* ---------footer--------- */
+.footer-container{
+    max-width: 1170px;
+    margin: auto;
+}
 
+.row{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer ul{
+    margin-top: -1500px;
+    list-style: none;
+    z-index: 12;
+    padding: 0 15px;
+}
+
+.footer img{
+    position: relative;
+    top: -1365px;
+    z-index: 11;
+}
+.col{
+    width: 25%;
+    margin-top: -100px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #000;
+}
+
+.col h4{
+    left: 220px;
+    color: #fff;
+    margin-top: -1600px;
+    z-index: 13;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+}
+
+.col h4:hover{
+    text-shadow: #000000 3px -2px 5px;
+}
+
+.col h4::before{
+    content: "";
+    position: absolute;
+    left:0 ;
+    top: 20px;
+    bottom: -10px;
+    background-color: rgb(140, 179, 199);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    z-index: 13;
+}
+
+.col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+
+}
+
+
+.col ul li a:hover{
+    color: white;
+    padding-left: 8px ;
+
+}
+
+.col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 400px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+}
 
 
 
