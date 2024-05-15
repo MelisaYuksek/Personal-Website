@@ -452,16 +452,16 @@ header.sticky{
 }
 .col{
     width: 25%;
-    margin-top: -100px;
+    margin-top: -250px;
     display: flex;
     flex-wrap: wrap;
     color: #000;
 }
 
 .col h4{
-    left: 220px;
+    left: 275px;
     color: #fff;
-    margin-top: -1600px;
+    margin-top: -1550px;
     z-index: 13;
     text-transform: capitalize;
     font-size: 18px;
@@ -486,6 +486,10 @@ header.sticky{
     z-index: 13;
 }
 
+.col ul{
+   transform: translateX(200px);
+   z-index: 15;
+}
 .col ul li:not(:last-child){
     margin-bottom: 10px;
 }
@@ -508,16 +512,35 @@ header.sticky{
 
 }
 
-.col .social-links a{
+.social-links h4{
+    left: 1000px;
+    color: #fff;
+    margin-top: -1800px;
+    z-index: 13;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+
+}
+
+.social-links h4:hover{  
+    text-shadow: #000000 3px -2px 5px;
+}
+
+.social-links a{
+    z-index: 14;
     display: inline-block;
     height: 40px;
     width: 40px;
     background-color: rgba(255, 255, 255, 0.2);
     margin: 0 10px 10px 0;
+    bottom: 100px;
+    left: 300px;
     text-align: center;
     line-height: 400px;
     border-radius: 50%;
-    color: white;
+    color: rgb(59, 202, 2);
     transition: all 0.5s ease;
 }
 
