@@ -34,6 +34,35 @@ $(document).ready(function ($){
             },
         },
     });
+    var book_table = new Swiper(".book-table-img-slider", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        speed: 2000,
+        effect: "coverflow",
+        coverflowEffect: {
+            rotate: 3,
+            stretch: 2,
+            depth: 100,
+            modifier: 5,
+            slideShadows: false,
+        },
+        loopAdditionSlides: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+
+
 
 
 
@@ -84,12 +113,68 @@ $(document).ready(function ($){
     });
     
 
+    // ******************hobiler api***************
+
+    // fetch("https://pokeapiçco/api/v2/pokemon/spongebob")
+    // .then(response => {
+    //     if(!response.ok){
+    //         throw new Error("Could  not fetch resource");
+    //     }
+    //     return response.json();
+    // })
+
+    // .then(data => console.log(data.id))
+    // .catch(error=>console.error(error))
+
+    
+        
+function getPokemon(e) {
+    const name = document.querySelector("#pokemonName").value;
+    const pokemonName = lowerCaseName(name);
+  
+    fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
+      .then((response) => response.json())
+      .then((data) => {
+        document.querySelector(".pokemonBox").innerHTML = `
+        <div>
+          <img
+            src="${data.sprites.other["official-artwork"].front_default}"
+            alt="Pokemon name"
+          />
+        </div>
+        <div class="pokemonInfos">
+          <h1>${capitalizeFirstLetter(data.name)}</h3>
+         
+        </div>`;
+      })
+      .catch((err) => {
+        document.querySelector(".pokemonBox").innerHTML = `
+        <h4>Pokemon Bulunamadı 😞</h4>
+        `;
+        console.log("Pokemon not found", err);
+      });
+  
+    e.preventDefault();
+  }
+
+    
+    
 
 
 
 
 
+// **************** login *******************
 
+document.getElementById("loginForm").addEventListener("submit", function(event){
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    if (username.trim() === '' || password.trim() === '') {
+        alert("Kullanıcı adı ve şifre alanları boş bırakılamaz.");
+        event.preventDefault();
+    }
+});
 
 
 

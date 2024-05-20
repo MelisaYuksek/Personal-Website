@@ -31,6 +31,33 @@
 
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
+
+
+    <script> 
+        function HavaDurumuGetir ( cityID , key ){
+            fetch('https://home.openweathermap.org/data/2.5/weather?q='+cityID+'&lang=tr&appid='+ key)
+            .then(function(resp) {return resp.json()})
+            .then(function(data){HavaDurumuGoster(data);
+            });
+    
+        }
+        function HavaDurumuGoster(d){
+            var celcius=Math.round(parseFloat(d.main.temp)-273.15);
+                var fahrenheit=Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32);
+                var aciklama=d.weather[0].description;
+                document.getElementById('aciklama').innerHTML=aciklama;
+                document.getElementById('sicaklik').innerHTML=celcius+'&deg;';
+                document.getElementById('konum').innerHTML=d.name;
+    
+        }
+    
+    
+    </script>
+    
+
+
+
+
 </head>
 
 <body class="body-fixed">
@@ -84,22 +111,101 @@
 
 
 
+<link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pokemon API</title>
+  </head>
+  <body>
+    <main>
+      <div class="searchBox">
+        <input id="pokemonName" type="Pokemon name" placeholder="Pokemon name"/>
+        <button id="search">🔎</button>
+      </div>    
+      <div class="pokemonBox">
+       
+    </div>
+    </main>
+    <script src="script.js"></script>
 
 
 
 
+                <!-- ------ footer başlangıcı ------- -->
+                <footer class="site-footer" id="contact">
+                    <div class="top-footer section">
+                        <div class="sec-wp">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="footer-info">
+                                            <div class="footer-logo">
+                                                <a href="index.html">
+                                                    <img src="images/logo-removebg.png" alt="">
+                                                </a>
+                                            </div>
+                                            <p> Bu sayfanın sonuna geldik. <br>
+                                                Merak etme, keşfedilmeyi bekleyen <br> birçok sayfa var!
+                                            </p>
+                                            <div class="social-icon">
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://www.instagram.com/melisayksek"><i class='bx bxl-instagram'></i></a>
+                                                        <a href="https://www.linkedin.com/in/melisa-yüksek-67686a297"><i class='bx bxl-linkedin'></i></a>
+                                                        <a href="https://github.com/MelisaYuksek"><i class='bx bxl-github'></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="footer-flex-box">
+                                            <div class="footer-table-info">
+                                                <h3><br>Linkler</h3>
+                                                <ul>
+                                                    <li> <a href="hakkimda.html"> Hakkımda </a> </li>
+                                                    <li> <a href="sehir.html"> Şehir </a> </li>
+                                                    <li> <a href="mirasimiz.html"> Mirasımız </a> </li>
+                                                    <li> <a href="iletisim.html"> İletişim </a> </li>
+                                                </ul>
+                                            </div>
+                                             <div class="footer-menu">
+                                                <h3><br>Yardım Al</h3>
+                                                <ul>
+                                                    <li> <a href="#">SSS </a> </li>
+                                                    <li> <a href="#">bursa </a> </li>
+                                                    <li> <a href="#">sakarya üniversitesi </a> </li>
+                                                    <li> <a href="#">bilgisayar mühendisliği </a> </li>
+                                                </ul>
+                                             </div>
+                                            <div class="footer-menu web-nav-menu">
+                                                <h3><br>Destek Olun</h3>
+                                                    <a href="https://www.instagram.com/melisayksek"></i><box-icon type='logo' name='instagram'></box-icon></i></a>
+                                                    <a href="https://www.linkedin.com/in/melisa-yüksek-67686a297"><box-icon name='linkedin' type='logo' ></box-icon></i></a>
+                                                    <a href="https://github.com/MelisaYuksek"><box-icon name='github' type='logo' ></box-icon></a>
+                                                  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 text-center">
+                                    <div class="copyright-text">
+                                        <p>© 2024 Melisa Yüksek. Tüm hakları saklıdır.</p>
+                                    </div>
+                                </div>
+                            </div>
 
-
-
-
-
-
-
-
-
-
-
-
+                        </div>
+                    </div>
+                </footer>
 
 
 

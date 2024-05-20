@@ -23,6 +23,9 @@
     <!-- fancy box -->
     <link rel="stylesheet" href="CSS/jquery.fancybox.min.css">
 
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 
     <link rel="stylesheet" href="../CSS/styles.css">
 
@@ -81,62 +84,217 @@
 
     </header>
 
-<!-- 
-    <div class="container-iletisim">
-        <h1>İletişim Formu</h1>
-        <div class="sec-title-shape mb-4">
-            <img src="/images/minicloud - Kopya.png" alt="">
-        </div>
-        <form action="php/index.php" method="POST" >
-             <div class="mb-3">
-                <label for="fullName" class="form-label">Adınız</label>
-                <input type="text" name="fullName" required autofocus>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">E-Mail Adresiniz</label>
-                <input type="email" name="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Mesajınız</label>
-                <textarea  name="message" rows="3" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Formu Gönder</button>
-            <button type="button" class="btn btn-secondary" @click="resetForm">Formu Sıfırla</button>
-        </form>
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
-        <div class="modal" id="successModal" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Başarı</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Mesajınız başarıyla gönderildi.
-                    </div>
-                </div>
-            </div>
+<!-- Ulucami -->
+<section class="detayli-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5 mb-4">
+            <h1 class="display-4 mb-4">Daha <span>detaylı</span> İnceleyelim</h1>
         </div>
+       
+      <div class="row">
+
+         <!-- Kubbeler -->
+         <div class="col-md-5 mb-4">
+            <div class="card">
+              <img src="/images/ulucamii.jpg" class="card-img-top" alt="ulucami">
+              <div class="card-body">
+                <h5 class="card-title">Ulu Cami</h5>
+                <p class="card-text"> Bursa'nın en büyük ve en önemli camilerinden biri olan Ulu Camii, 
+                    1399 yılında Yıldırım Bayezid tarafından yaptırılmıştır. 20 kubbesi ve geniş iç mekanıyla dikkat çeker.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kubbeler -->
+          <div class="col-md-5 mb-4">
+            <div class="card">
+              <img src="/images/cumalikizik.jpg" class="card-img-top" alt="cumalikizik">
+              <div class="card-body">
+                <h5 class="card-title">Cumalıkızık</h5>
+                <p class="card-text">Osmanlı döneminden kalma tarihi evleri ve dar sokakları ile ünlü olan Cumalıkızık, 
+                    Bursa'nın doğusunda yer alan ve köy yaşamını yansıtan bir yerdir. Cumalıkızık Köyü kendine has tarihi dokusu, 
+                    bozulmamış mimari yapısıyla 2014 yılında UNESCO Dünya Mirası listesine alınmıştır. 
+                    Bunda burada çekilen filmlerin önemli bir payı vardır.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Kubbeler -->
+          <div class="col-md-5 mb-4">
+            <div class="card">
+              <img src="/images/dağ.png" class="card-img-top" alt="Uludağ">
+              <div class="card-body">
+                <h5 class="card-title">Uludağ</h5>
+                <p class="card-text">Türkiye'nin en popüler kayak ve kış sporları merkezi olan Uludağ, 
+                    aynı zamanda yaz aylarında doğa yürüyüşleri ve piknikler için de ideal bir destinasyondur.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Kubbeler -->
+          <div class="col-md-5 mb-4">
+            <div class="card">
+              <img src="/images/saat.png" class="card-img-top" alt="TophaneSaatKulesi">
+              <div class="card-body">
+                <h5 class="card-title">Tophane Saat Kulesi</h5>
+                <p class="card-text">Bursa'nın sembolik yapılarından biri olan Tophane Saat Kulesi, 
+                    1905 yılında inşa edilmiştir. Şehrin tarihi merkezinde yer alır ve çevresinde birçok tarihi yapı bulunur.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Kubbeler -->
+          <div class="col-md-5 mb-4">
+            <div class="card">
+              <img src="/images/irgandi.png" class="card-img-top" alt="irgandi">
+              <div class="card-body">
+                <h5 class="card-title">Irgandı Köprüsü</h5>
+                <p class="card-text">Bursa'nın 15. Yüzyılda önemli bir ticaret merkezi olması sürecinde rol oynayan 
+                    imar faaliyetleri kapsamında tüccarların da ticaret amaçlı yapıları inşa ettirdikleri bilinmektedir. 
+                    Bir ulaşım yapısı olması yanı sıra üzerinde yer alan sanat atölyeleri ile bir sanat köprüsü olma özelliğini de taşımaktadır.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Kubbeler -->
+          <div class="col-md-5 mb-4">
+            <div class="card">
+              <img src="/images/golyazi.jpg" class="card-img-top" alt="golyazi">
+              <div class="card-body">
+                <h5 class="card-title">Gölyazı</h5>
+                <p class="card-text">Gölyazı, Bursa'nın gizli cennetlerinden biridir. Köy, tarihi dokusuyla dikkat çeker; 
+                    dar sokakları, taş evleri ve göl manzarasıyla büyüleyici bir atmosfere sahiptir. 
+                    Antik kalıntıları ve ağlayan çınar ağacıyla çevrili Gölyazı, doğa yürüyüşleri 
+                    yapmak isteyenler için ideal bir noktadır. </p>
+              </div>
+            </div>
+          </div>
+          <!-- Kubbeler -->
+          <div class="col-md-5 mb-4">
+            <div class="card">
+              <img src="/images/kozahan.jpg" class="card-img-top" alt="kozahan">
+              <div class="card-body">
+                <h5 class="card-title">Kozahan</h5>
+                <p class="card-text"> Bursa'nın tarihi Kapalı Çarşısı'nda bulunan Koza Hanı, ipek ticaretinin merkezi olmuştur. 
+                    15. yüzyılda yapılmıştır ve Osmanlı mimarisinin güzel bir örneğidir. Bugün ipek ürünleri 
+                    satan dükkanlarla doludur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 mb-4">
+            <div class="card">
+              <img src="/images/carsi.jpg" class="card-img-top" alt="carsi">
+              <div class="card-body">
+                <h5 class="card-title">Tarihi Kapalı Çarşı</h5>
+                <p class="card-text">Bursa'nın alışveriş ve ticaret merkezi olan Kapalı Çarşı, hediyelik eşyalar, 
+                    tekstil ürünleri ve el yapımı ürünlerle dolu renkli bir çarşıdır.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 mb-4">
+            <div class="card">
+              <img src="/images/yesilturbe.jpg" class="card-img-top" alt="yesilturbe">
+              <div class="card-body">
+                <h5 class="card-title">Yeşil türbe</h5>
+                <p class="card-text">Sultan Çelebi Mehmed tarafından yaptırılan ve kendisinin de türbesinin 
+                    bulunduğu Yeşil Türbe, muhteşem çinileri ve yeşil renkteki dış cephesiyle ünlüdür. Ayrıca,
+                ünlü "Kamplubağa Terbiyecisi" tablosundaki arkaplan yeşil türbenin içine aittir.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kubbeler -->
+          <div class="col-md-5 mb-4">
+            <div class="card">
+              <img src="/images/trilye.jpg" class="card-img-top" alt="trilye">
+              <div class="card-body">
+                <h5 class="card-title">Trilye</h5>
+                <p class="card-text">Bursa'nın deniz kenarındaki tarihi bir mahallesi olan Trilye, dar sokakları, 
+                    taş evleri ve rengarenk çiçekleriyle ünlüdür. Osmanlı ve Rum mimarisi bir arada görülebilir.</p>
+              </div>
+            </div>
+          </div>
+
+  
+        
+      </div>
     </div>
-  -->
-
-  <div id="app">
-    <contact-form></contact-form>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-  <script src="js/contactFormComponent.js"></script>
-  <script src="js/app.js"></script>
-
- 
-
-<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-<script src="script.js"></script>
+  </section>
 
 
 
 
 
+
+
+
+
+
+
+
+<!-- jquery -->
+<script src="Javascript/assets/jquery-3.5.1.min.js"></script>
+
+<!-- bootstrap -->
+<script src="Javascript/bootstrap/bootstrap.min.js"></script>
+<script src="Javascript/assets/popper.min.js"></script>
+
+<!-- swiper slider -->
+
+
+<script src="Javascript/assets/swiper-bundle.min.js"></script>
+
+<!-- mixitup--filter -->
+<script src="Javascript/assets/jquery.mixitup.min.js"></script>
+
+<!-- fancy box -->
+<script src="Javascript/assets/jquery.fancybox.min.js"></script>
+
+<!-- parallax -->
+<script src="Javascript/assets/parallax.min.js"></script>
+
+<!-- gsap -->
+<script src="Javascript/assets/gsap.min.js"></script>
+
+<!-- scroll trigger -->
+<script src="Javascript/assets/ScrollTrigger.min.js"></script>
+
+<!-- scroll to plugin -->
+<script src="Javascript/assets/ScrollToPlugin.min.js"></script>
+
+<!-- rellax -->
+<script src="Javascript/assets/rellax.min.js"></script>
+<script src="Javascript/assets/rellax-custom.js"></script>
+
+<!-- smooth scroll -->
+<script src="Javascript/assets/smooth-scroll.js"></script>
+
+<!-- custom js  -->
+<script src="Javascript/main.js"></script>
+
+
+
+    
                 <!-- ------ footer başlangıcı ------- -->
                 <footer class="site-footer" id="contact">
                     <div class="top-footer section">
@@ -213,58 +371,11 @@
 
 
 
-<!-- Vue.js -->
-<script src="https://cdn.jsdelivr.net/npm/vue@3.2.13/dist/vue.global.prod.js"></script>
-<!-- Axios -->
-<script src="https://cdn.jsdelivr.net/npm/axios@0.21.4/dist/axios.min.js"></script>
-
-
-<!-- jquery -->
-<script src="Javascript/assets/jquery-3.5.1.min.js"></script>
-
-<!-- bootstrap -->
-<script src="Javascript/bootstrap/bootstrap.min.js"></script>
-<script src="Javascript/assets/popper.min.js"></script>
-
-<!-- swiper slider -->
-
-
-<script src="Javascript/assets/swiper-bundle.min.js"></script>
-
-<!-- mixitup--filter -->
-<script src="Javascript/assets/jquery.mixitup.min.js"></script>
-
-<!-- fancy box -->
-<script src="Javascript/assets/jquery.fancybox.min.js"></script>
-
-<!-- parallax -->
-<script src="Javascript/assets/parallax.min.js"></script>
-
-<!-- gsap -->
-<script src="Javascript/assets/gsap.min.js"></script>
-
-<!-- scroll trigger -->
-<script src="Javascript/assets/ScrollTrigger.min.js"></script>
-
-<!-- scroll to plugin -->
-<script src="Javascript/assets/ScrollToPlugin.min.js"></script>
-
-<!-- rellax -->
-<script src="Javascript/assets/rellax.min.js"></script>
-<script src="Javascript/assets/rellax-custom.js"></script>
-
-<!-- smooth scroll -->
-<script src="Javascript/assets/smooth-scroll.js"></script>
-
-<!-- custom js  -->
-
-
-
-
-
-
-
-
+            </div>
+        </div>
     
+
+
+
 </body>
 </html>
